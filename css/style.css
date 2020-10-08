@@ -67,6 +67,12 @@ flex-text{
   align-self: flex-start;
 }
 
+/* prevents the untitled section words
+still can't figure out how to remove the number*/
+.hidden{
+  display: none;
+}
+
 
 /* IPad Portrait view */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
@@ -96,6 +102,7 @@ article{
 h2{
   margin: 0;
 }
+
 
 section{
   width: 32%;
