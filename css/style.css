@@ -2,7 +2,7 @@
 main{
   background-color: #e6e6e9;
   margin: auto;
-  padding-bottom: 1px;
+  padding-bottom: 10px;
 }
 
 header{
@@ -38,7 +38,7 @@ section{
   background-color: #fff;
   border: 1px solid black;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
 }
 
 /* make my image fit the box */
@@ -52,7 +52,7 @@ footer p{
   padding: 1rem;
 }
 
-/* default flex must fix for GalaxyS5 */
+/* default flex for media queries to bounce from */
 article{
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +93,10 @@ article{
   flex-wrap: nowrap;
 }
 
+h2{
+  margin: 0;
+}
+
 section{
   width: 32%;
   flex-direction: column;
@@ -110,6 +114,10 @@ footer{
   margin: 0 auto;
 }
 
+h2{
+  padding-left: 2rem;
+}
+
 header{
   padding-top: 1rem;
   margin-bottom: 1.5rem;
@@ -121,5 +129,6 @@ article{
 
 section{
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 }
