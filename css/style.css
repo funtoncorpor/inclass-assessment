@@ -1,28 +1,32 @@
 /* styling for galaxys5 also default */
+main{
+  background-color: #e6e6e9;
+  margin: auto;
+  padding-bottom: 1px;
+}
 
 header{
   margin-bottom: 1.5rem;
-}
-
-/* padding to the left for alignment */
-h1,h2{
-  padding-left: 1rem;
 }
 
 /* font sizing/styling */
 h1{
   font-size: 2.5rem;
   color: purple;
+  padding: 1rem 0 0 1rem;
+  margin: 0;
 }
 
 h2{
-  padding-top: 1rem;
   font-size: 1.875rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
   margin: 0;
 }
 
 h3{
   font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 p{
@@ -30,11 +34,6 @@ p{
 }
 
 /* styling the more visual elements aka background,border etc */
-main{
-  background-color: #e6e6e9;
-  padding-bottom: 1px;
-}
-
 section{
   background-color: #fff;
   border: 1px solid black;
@@ -53,6 +52,7 @@ footer p{
   padding: 1rem;
 }
 
+/* default flex must fix for GalaxyS5 */
 article{
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +60,7 @@ article{
 
 section{
   display: flex;
-  flex-wrap:
+  flex-wrap: wrap;
 }
 
 flex-text{
@@ -68,7 +68,7 @@ flex-text{
 }
 
 
-/* Ipad Portrait view */
+/* IPad Portrait view */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 
 article {
@@ -83,5 +83,43 @@ img{
   width: 40%;
   margin-right: 1rem;
 }
+}
 
+
+/* IPad Landscape view */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+article{
+  flex-wrap: nowrap;
+}
+
+section{
+  width: 32%;
+  flex-direction: column;
+}
+}
+
+/* desktop view */
+@media only screen and (min-device-width : 1025px) and (orientation : landscape){
+
+header,
+h2,
+article,
+footer{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header{
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+article{
+  flex-wrap: nowrap;
+}
+
+section{
+  flex-direction: column;
+}
 }
